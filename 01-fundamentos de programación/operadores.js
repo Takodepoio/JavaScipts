@@ -115,9 +115,12 @@ comparacion = 4 !== value;
  console.log (comparacion);
 
  //menor que (<)
+
  comparacion = 4 < value;
  console.log (comparacion);
+
  //meno o iual a (<=)
+ 
  comparacion = 4 <= value;
  console.log (comparacion);
 
