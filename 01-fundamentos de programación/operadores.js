@@ -124,3 +124,5 @@ comparacion = 4 !== value;
  comparacion = 4 <= value;
  console.log (comparacion);
 
+
+
