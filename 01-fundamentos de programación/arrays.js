@@ -35,6 +35,26 @@ Tambien puedes quitar el ultimo con la funcion pop
 
 videojuegos.pop();
 
+El unshift agrega elementos al inicio . se estructura de la siguiente manera
+
+nombreArray.unshift("valorArreglo");
+
+EL push sirve para agregar uno al final y se escribe de la misma manera.
+
+nombreArray.push(valorArray);
+
+shift es la funcion que quita un espacio del indice al inicio.
+
+nombreArray.shift();
+
+con la funcion lenght podemos obtener en valor numero equivalente a la cantidad de valores ocupando un espacio dentro del array.
+
+
+
+
+
+
+
 */
 
 //probemos
@@ -42,4 +62,39 @@ videojuegos.pop();
 videojuegos.push("Fall Guys");
 
 alert(videojuegos[4]);
+
+//indexOf este valor nos dice cual es el numero de indice en donde se encuentra un valor.
+
+/* let indice = videojuegos.indexOf("Fall Guys");
+
+console.log(indice); */
+
+// El splice nos sirve para agregar mas valores con su propio espacio al array segun la porcion que escojamos del mismo.
+console.log(videojuegos);
+
+videojuegos.splice(4,0,"Red Dead Redemption", "Valorant");
+
+console.log(videojuegos);
+
+
+
+
+
+
+
+
+
+
+/* 
+
+sort() - Ordena los elementos de un array de mayor a menor alfabeticamente.
+
+nombreArray.sort(); - 
+
+
+*/
+
+
+
+
 
