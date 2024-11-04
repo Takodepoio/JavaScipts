@@ -1,7 +1,7 @@
 /* 
 Hay varios tipos de ciclos.
 
-for 
+for (definicion; condicion ; actualizacion){codigo a ejectutar}
 Este se utiliza cuando vas a usar un ciclo y conoces sulimite. Se usa con contadores.
 while
 El ciclo se aplica mientras la condicion sea verdadera.
@@ -60,3 +60,61 @@ do{
     console.log("el numero es: "+ numero);
     numero--;
 }while(numero<6 && numero>=0);
+
+/* 
+Vamos a recorrer los Arreglos a travez de su índice 
+podemos obtener el dato a travez de este o hacer algo con el indice.
+*/
+let colores = ["rojo", "negro", "azul"];
+//indice          0       1        2
+
+console.log(colores[0]); 
+colores.push("amarillo");
+
+
+let indice = colores.length;
+
+
+/* recorrer el array con el bucle for */
+/*for(let i = 0 ; i < indice ; i++){
+
+    console.log(colores[i]);
+
+}*/
+
+/* 
+bucle for....of
+
+Es una manera simple y moderna de recorrer arrays en JavaScript.
+Este bucle nos permite acceder directamente al valor de cada elemento sin necesidad de usar
+indices.
+
+Sintaxis
+
+for(constante elemnto of nombreArray){
+//code to execute for every element in the array
+
+}
+
+*/
+
+for(const color of colores){
+console.log(`Color: ${color}`);
+
+}
+
+//ejercicio
+ 
+let array = [];
+
+let cantidad = prompt(`dime cuantos dulces quieres "tiene que ser almenos uno"`);
+
+for(let i = 1; i <= cantidad ; i++){
+
+    array.push(prompt("pon los dulces que quieres"));
+}
+
+for(const dulce of array){
+
+    console.log(`dulce: ${dulce}`);
+}
