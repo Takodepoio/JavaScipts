@@ -2,3 +2,6 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: blueviolet;
 }
+body{
+    background-color: rgb(44, 44, 44);
+}
